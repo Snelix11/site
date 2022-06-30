@@ -13,6 +13,7 @@ body{
     background-size: cover;
     background-blend-mode: darken;
     text-align: center;
+    
        
     
     
@@ -47,7 +48,6 @@ header{
     margin-top: 30px;
     margin: 20px;
     color: #fff;
-    margin-left: 30px;
     border-radius: 5px;
     display: inline-block;
     padding: 15px;
@@ -72,7 +72,7 @@ div{
 h2{
     font-size: 70px;
     margin: 40px;
-    margin-left: 75px;
+    
     margin-right: 50px;
     
     color: #fff;
@@ -83,7 +83,7 @@ h2{
 
 p{
     color: rgb(230, 230, 230);
-    margin-left: 75px;
+    
     font-size: 18px;
     margin-bottom: 120px;
     
@@ -96,12 +96,13 @@ h3{
     color: #fff;
     margin: 25px;
     margin-top: 150px;
-    margin-left: 75px;
+    
 
 }
 
 main{
     min-width: 200px;
     max-width: 1200px;
-    margin: auto;
+    margin: 35px;
+
 }
