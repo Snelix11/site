@@ -142,30 +142,84 @@ header > a{
     }
 
     #link{    
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right: 0px;
         background: rgba(0, 0, 0, 0.74);
-        height: 100vh;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
         z-index: 1000;
     
     }
 
     #menu.active #link{
-        display: block;
+        visibility: visible;
+        height: 100vh;
+        overflow-y: auto;
     }
     
     #link a {
         padding: 1rem 0;
         margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         
     }
 
     #menu li {
         display:flex;
     }
+
+    #btn{
+        display: flex;
+        padding: .5rem 1rem;
+        font: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #fff;
+        gap: .5rem;
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+        color: #fff;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #menu.active #hamburguer::before{
+        transform: rotate(135deg);
+        
+    }
+
+    #menu.active #hamburguer::after{
+        transform:rotate(-135deg);
+        top: -7px;
+    }
+
+
+    #menu.active #hamburguer{
+        border-top-color:transparent ;
+        
+
+    }
+
+   
 
 
 }
