@@ -25,32 +25,38 @@ body{
 header{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.74);
+    
 }
 
 #menu{
     list-style-type: none;
     padding: 10px;
     text-decoration: none;
-    display:inline;
+    margin: 0;
     
     
     
 }
 
 #menu li{
-    display: inline
+    list-style: none;
+    display: inline-block;
     
 }
 
 #menu li a{
-    display: inline;
+    
     text-decoration: none;
     padding: 10px;
     margin-top: 30px;
     margin: 20px;
     color: #fff;
     border-radius: 5px;
-    display: inline-block;
     padding: 15px;
 
     
@@ -99,10 +105,67 @@ h3{
 
 }
 
+
+
 main{
     min-width: 200px;
     max-width: 1200px;
     margin: 35px;
     margin: auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > a{
+    font-weight: bolder;
+    font-size: 32px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+    
+}
+
+#btn{
+    display: none;
+}
+
+@media (max-width: 700px){
+    #btn{
+        display: block;
+    }
+
+    #link{    
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.74);
+        height: 100vh;
+        z-index: 1000;
+    
+    }
+
+    #menu.active #link{
+        display: block;
+    }
+    
+    #link a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        
+    }
+
+    #menu li {
+        display:flex;
+    }
+
 
 }
