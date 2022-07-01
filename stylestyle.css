@@ -137,6 +137,18 @@ header > a{
 }
 
 @media (max-width: 700px){
+
+    h3{
+        font-size: 30px;
+        margin:0px;
+        margin-bottom: 100px;
+        margin-top: 120px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
     #btn{
         display: block;
     }
