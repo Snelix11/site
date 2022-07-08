@@ -1,24 +1,69 @@
 *{
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
-body{
-    
-    background: rgba(0, 0, 0, 0.4) url('aa.png');
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    text-align: center;
-    margin: auto;
-    
-       
-    
-    
+div.formatted ol, div.formatted ul {
+    margin: 0 0 60px;
+    padding: 0 0 0 16px;
+    list-style-position: outside;
 }
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+div.formatted {
+    color: #424d56;
+    font-family: Fedra,Segoe UI,Arial,Helvetica Neue,"sans-serif";
+    font-weight: 300;
+}
+body {
+    background: #f4f5f4;
+    font-family: Fedra,Segoe UI,Arial,Helvetica Neue,"sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+   
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+ol li{
+    margin: 37px;
+}
+
+
 
 
 
@@ -30,6 +75,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.74);
+    margin-bottom: 50px;
     
 }
 
@@ -69,68 +115,19 @@ header{
     
 }
 
-div{
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200;
-    min-width: 200px;
-    margin: 70px;
-
-}
-
-h2{
-    font-size: 70px;
-    margin: 40px;
-    margin-right: 50px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
-}
-
-p{
-    color: rgb(230, 230, 230);
-    font-size: 18px;
-    margin-bottom: 120px;
-    
-
-}
-
-h3{
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    margin: 25px;
-    margin-top: 150px;
-    
-
-}
-
-
-
-main{
-    min-width: 200px;
-    max-width: 1200px;
-    margin: 35px;
-    margin: auto;
-
-}
-
-a{
+header a{
     text-decoration: none;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header > a{
-    font-weight: bolder;
-    font-size: 32px;
-    margin-left: 70px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-
-
     
 }
+
+#logo{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+
 
 #btn{
     display: none;
@@ -179,6 +176,7 @@ header > a{
     #link a {
         padding: 1rem 0;
         margin: 0 1rem;
+        
         
     }
 
@@ -237,6 +235,9 @@ header > a{
 
 }
 
+#pum1, #pum2, #pum3{
+    margin: 37px;
+}
 
 
 
